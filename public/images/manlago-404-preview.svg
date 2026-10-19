@@ -1,0 +1,51 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 404 / Receipt Illustration -->
+  <rect x="250" y="50" width="300" height="500" rx="20" fill="white" stroke="#CECECE" stroke-width="1" />
+  
+  <!-- Jagged Edges -->
+  <path d="M250 50L260 40L270 50L280 40L290 50L300 40L310 50L320 40L330 50L340 40L350 50L360 40L370 50L380 40L390 50L400 40L410 50L420 40L430 50L440 40L450 50L460 40L470 50L480 40L490 50L500 40L510 50L520 40L530 50L540 40L550 50" stroke="#CECECE" stroke-width="1" fill="white" />
+  <path d="M250 550L260 560L270 550L280 560L290 550L300 560L310 550L320 560L330 550L340 560L350 550L360 560L370 550L380 560L390 550L400 560L410 550L420 560L430 550L440 560L450 550L460 560L470 550L480 560L490 550L500 560L510 550L520 560L530 550L540 560L550 550" stroke="#CECECE" stroke-width="1" fill="white" />
+
+  <text x="400" y="120" font-family="Inter, sans-serif" font-size="24" font-weight="900" fill="#0F0F0F" text-anchor="middle" letter-spacing="0.1em">404</text>
+  <text x="400" y="150" font-family="Inter, sans-serif" font-size="10" font-weight="900" fill="#8C8C8C" text-anchor="middle" letter-spacing="0.2em">PAGE NOT FOUND</text>
+  
+  <rect x="280" y="200" width="240" height="1" fill="#CECECE" stroke-dasharray="4 4" />
+  
+  <rect x="280" y="240" width="120" height="8" rx="4" fill="#CECECE" />
+  <rect x="480" y="240" width="40" height="8" rx="4" fill="#CECECE" />
+  
+  <rect x="280" y="280" width="100" height="8" rx="4" fill="#CECECE" />
+  <rect x="480" y="280" width="40" height="8" rx="4" fill="#CECECE" />
+  
+  <rect x="280" y="350" width="240" height="2" fill="#0F0F0F" />
+  <text x="280" y="390" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="#0F0F0F">TOTAL</text>
+  <text x="520" y="390" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="#0F0F0F" text-anchor="end">$0.00</text>
+  
+  <!-- Barcode -->
+  <g transform="translate(320, 440)">
+    <rect x="0" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="5" y="0" width="4" height="40" fill="#0F0F0F" />
+    <rect x="12" y="0" width="1" height="40" fill="#0F0F0F" />
+    <rect x="15" y="0" width="3" height="40" fill="#0F0F0F" />
+    <rect x="22" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="28" y="0" width="5" height="40" fill="#0F0F0F" />
+    <rect x="38" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="45" y="0" width="1" height="40" fill="#0F0F0F" />
+    <rect x="50" y="0" width="4" height="40" fill="#0F0F0F" />
+    <rect x="60" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="65" y="0" width="3" height="40" fill="#0F0F0F" />
+    <rect x="72" y="0" width="1" height="40" fill="#0F0F0F" />
+    <rect x="75" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="80" y="0" width="4" height="40" fill="#0F0F0F" />
+    <rect x="90" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="95" y="0" width="3" height="40" fill="#0F0F0F" />
+    <rect x="105" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="110" y="0" width="4" height="40" fill="#0F0F0F" />
+    <rect x="120" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="125" y="0" width="3" height="40" fill="#0F0F0F" />
+    <rect x="135" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="140" y="0" width="4" height="40" fill="#0F0F0F" />
+    <rect x="150" y="0" width="2" height="40" fill="#0F0F0F" />
+    <rect x="155" y="0" width="3" height="40" fill="#0F0F0F" />
+  </g>
+</svg>

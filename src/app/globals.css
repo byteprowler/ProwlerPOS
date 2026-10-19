@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-shimmer: shimmer 2s infinite;
+
+  --color-background: #F5F5F5;
+  --color-foreground: #0F0F0F;
+
+  --color-primary: #246BF5;
+  --color-primary-hover: #1e5cd4;
+  --color-secondary: #2B5EC5;
+  --color-brand-focus: #2B5EC5;
+  --color-brand-border: #CECECE;
+  --color-muted-text: #8C8C8C;
+
+  --color-light-grey: #F5F5F5;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+
+  --radius-xl: 1rem;
+}
+
+:root {
+  --background: #F5F5F5;
+  --foreground: #0F0F0F;
+
+  --primary: #246BF5;
+  --primary-hover: #1e5cd4;
+  --secondary: #2B5EC5;
+  --brand-focus: #2B5EC5;
+  --brand-border: #CECECE;
+  --brand-text-color: #8C8C8C;
+  
+  /* Fallbacks for old variable names to prevent breaking components before they are updated */
+  --purple-accent: #246BF5;
+  --secondary-glow: rgba(36, 107, 245, 0.2);
+
+  --light-grey: #F5F5F5;
+  --border-color: rgba(15, 15, 15, 0.08);
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --radius: 1rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}

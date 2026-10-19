@@ -1,0 +1,69 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Shadow -->
+  <rect x="50" y="50" width="700" height="500" rx="40" fill="white" fill-opacity="0.01" />
+  
+  <!-- Main POS Window (Back) -->
+  <rect x="100" y="100" width="600" height="400" rx="24" fill="white" stroke="#CECECE" stroke-width="1" />
+  <rect x="100" y="100" width="600" height="48" rx="24" fill="#F9FAFB" />
+  <rect x="100" y="148" width="600" height="1" fill="#CECECE" />
+  <circle cx="130" cy="124" r="6" fill="#CECECE" />
+  <circle cx="150" cy="124" r="6" fill="#CECECE" />
+  <circle cx="170" cy="124" r="6" fill="#CECECE" />
+  <text x="350" y="129" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#8C8C8C" letter-spacing="0.1em">ProwlerPOS INTERFACE</text>
+
+  <!-- Left Side: POS Interface Elements -->
+  <rect x="130" y="180" width="120" height="120" rx="16" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+  <rect x="270" y="180" width="120" height="120" rx="16" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+  <rect x="130" y="320" width="120" height="120" rx="16" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+  <rect x="270" y="320" width="120" height="120" rx="16" fill="#246BF5" />
+  <rect x="290" y="340" width="80" height="8" rx="4" fill="white" fill-opacity="0.2" />
+  <rect x="290" y="360" width="40" height="8" rx="4" fill="white" fill-opacity="0.2" />
+  
+  <!-- Right Side: Order Summary -->
+  <rect x="420" y="180" width="250" height="260" rx="20" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+  <rect x="440" y="210" width="210" height="1" fill="#CECECE" />
+  <rect x="440" y="240" width="150" height="8" rx="4" fill="#0F0F0F" />
+  <rect x="440" y="260" width="100" height="6" rx="3" fill="#8C8C8C" />
+  <rect x="620" y="240" width="30" height="8" rx="4" fill="#0F0F0F" />
+  
+  <rect x="440" y="290" width="150" height="8" rx="4" fill="#0F0F0F" />
+  <rect x="440" y="310" width="100" height="6" rx="3" fill="#8C8C8C" />
+  <rect x="620" y="290" width="30" height="8" rx="4" fill="#0F0F0F" />
+  
+  <rect x="440" y="380" width="210" height="40" rx="12" fill="#0F0F0F" />
+  <text x="460" y="405" font-family="Inter, sans-serif" font-size="10" font-weight="900" fill="white" letter-spacing="0.1em">CHECKOUT</text>
+  <text x="600" y="405" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="white">$48.00</text>
+
+  <!-- Waiter Tablet (Floating Front Left) -->
+  <g filter="drop-shadow(0 20px 40px rgba(0,0,0,0.1))">
+    <rect x="50" y="350" width="180" height="220" rx="24" fill="white" stroke="#CECECE" stroke-width="1" />
+    <rect x="70" y="375" width="140" height="40" rx="12" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+    <rect x="85" y="390" width="60" height="6" rx="3" fill="#0F0F0F" />
+    <circle cx="190" cy="395" r="4" fill="#246BF5" />
+    
+    <rect x="70" y="430" width="140" height="80" rx="12" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+    <rect x="85" y="445" width="40" height="40" rx="8" fill="#CECECE" fill-opacity="0.2" />
+    <rect x="85" y="495" width="40" height="40" rx="8" fill="#CECECE" fill-opacity="0.2" />
+    
+    <rect x="70" y="525" width="140" height="30" rx="10" fill="#246BF5" />
+    <rect x="110" y="537" width="60" height="6" rx="3" fill="white" />
+  </g>
+
+  <!-- KDS Ticket (Floating Front Right) -->
+  <g filter="drop-shadow(0 15px 30px rgba(0,0,0,0.1))">
+    <rect x="550" y="420" width="200" height="150" rx="20" fill="#FFFFF0" stroke="#F0E68C" stroke-width="1" />
+    <rect x="550" y="420" width="200" height="4" rx="2" fill="#F0E68C" />
+    <text x="570" y="450" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="#8B4513">#1084</text>
+    <rect x="690" y="435" width="45" height="18" rx="6" fill="#F0E68C" />
+    <text x="700" y="448" font-family="Inter, sans-serif" font-size="9" font-weight="900" fill="white">05:22</text>
+    
+    <rect x="570" y="475" width="160" height="1" fill="#F0E68C" fill-opacity="0.3" stroke-dasharray="2 2" />
+    
+    <rect x="570" y="495" width="10" height="10" rx="2" fill="#F0E68C" />
+    <rect x="590" y="495" width="100" height="6" rx="3" fill="#8B4513" />
+    <rect x="590" y="510" width="60" height="4" rx="2" fill="#8B4513" fill-opacity="0.4" />
+    
+    <rect x="570" y="535" width="10" height="10" rx="2" fill="#F0E68C" />
+    <rect x="590" y="535" width="80" height="6" rx="3" fill="#8B4513" />
+  </g>
+</svg>

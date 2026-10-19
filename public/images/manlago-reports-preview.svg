@@ -1,0 +1,44 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Container -->
+  <rect x="50" y="50" width="700" height="500" rx="40" fill="white" stroke="#CECECE" stroke-width="1" />
+  
+  <!-- Sidebar -->
+  <rect x="50" y="50" width="180" height="500" rx="40" fill="#F9FAFB" />
+  <rect x="230" y="50" width="1" height="500" fill="#CECECE" />
+  
+  <circle cx="90" cy="100" r="12" fill="#246BF5" />
+  <rect x="115" y="95" width="80" height="10" rx="5" fill="#246BF5" fill-opacity="0.2" />
+  
+  <rect x="75" y="150" width="120" height="10" rx="5" fill="#CECECE" fill-opacity="0.3" />
+  <rect x="75" y="180" width="100" height="10" rx="5" fill="#CECECE" fill-opacity="0.3" />
+  <rect x="75" y="210" width="110" height="10" rx="5" fill="#CECECE" fill-opacity="0.3" />
+  
+  <!-- Dashboard Content -->
+  <text x="270" y="105" font-family="Inter, sans-serif" font-size="24" font-weight="900" fill="#0F0F0F">Daily Insights</text>
+  
+  <!-- KPI Cards -->
+  <rect x="270" y="140" width="130" height="100" rx="20" fill="white" stroke="#CECECE" stroke-width="1" />
+  <text x="290" y="165" font-family="Inter, sans-serif" font-size="10" font-weight="900" fill="#8C8C8C" letter-spacing="0.1em">REVENUE</text>
+  <text x="290" y="210" font-family="Inter, sans-serif" font-size="20" font-weight="900" fill="#0F0F0F">$4,289</text>
+  
+  <rect x="420" y="140" width="130" height="100" rx="20" fill="white" stroke="#CECECE" stroke-width="1" />
+  <text x="440" y="165" font-family="Inter, sans-serif" font-size="10" font-weight="900" fill="#8C8C8C" letter-spacing="0.1em">ORDERS</text>
+  <text x="440" y="210" font-family="Inter, sans-serif" font-size="20" font-weight="900" fill="#0F0F0F">152</text>
+  
+  <rect x="570" y="140" width="130" height="100" rx="20" fill="#246BF5" />
+  <text x="590" y="165" font-family="Inter, sans-serif" font-size="10" font-weight="900" fill="white" fill-opacity="0.6" letter-spacing="0.1em">GROWTH</text>
+  <text x="590" y="210" font-family="Inter, sans-serif" font-size="20" font-weight="900" fill="white">+14.2%</text>
+
+  <!-- Chart Area -->
+  <rect x="270" y="270" width="430" height="230" rx="24" fill="#F9FAFB" stroke="#CECECE" stroke-width="1" />
+  <g>
+    <!-- Bars -->
+    <rect x="300" y="440" width="30" height="20" rx="8" fill="#CECECE" fill-opacity="0.3" />
+    <rect x="350" y="400" width="30" height="60" rx="8" fill="#CECECE" fill-opacity="0.3" />
+    <rect x="400" y="360" width="30" height="100" rx="8" fill="#CECECE" fill-opacity="0.3" />
+    <rect x="450" y="320" width="30" height="140" rx="8" fill="#246BF5" />
+    <rect x="500" y="350" width="30" height="110" rx="8" fill="#CECECE" fill-opacity="0.3" />
+    <rect x="550" y="380" width="30" height="80" rx="8" fill="#CECECE" fill-opacity="0.3" />
+    <rect x="600" y="410" width="30" height="50" rx="8" fill="#CECECE" fill-opacity="0.3" />
+  </g>
+</svg>

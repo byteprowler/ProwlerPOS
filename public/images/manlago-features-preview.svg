@@ -1,0 +1,24 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Composition of feature icons/modules -->
+  <rect x="50" y="50" width="300" height="220" rx="32" fill="white" stroke="#CECECE" stroke-width="1" />
+  <circle cx="100" cy="100" r="20" fill="#246BF5" fill-opacity="0.1" />
+  <rect x="135" y="95" width="120" height="12" rx="6" fill="#0F0F0F" />
+  <rect x="135" y="115" width="80" height="8" rx="4" fill="#8C8C8C" />
+  
+  <rect x="400" y="50" width="300" height="220" rx="32" fill="white" stroke="#CECECE" stroke-width="1" />
+  <circle cx="450" cy="100" r="20" fill="#246BF5" fill-opacity="0.1" />
+  <rect x="485" y="95" width="120" height="12" rx="6" fill="#0F0F0F" />
+  
+  <rect x="50" y="320" width="650" height="230" rx="32" fill="#246BF5" fill-opacity="0.05" stroke="#246BF5" stroke-width="1" stroke-dasharray="8 8" />
+  <text x="375" y="440" font-family="Inter, sans-serif" font-size="20" font-weight="900" fill="#246BF5" text-anchor="middle" letter-spacing="0.1em">ALL MODULES INTEGRATED</text>
+  
+  <!-- Floating Check Badges -->
+  <g transform="translate(100, 380)">
+    <circle cx="0" cy="0" r="15" fill="#246BF5" />
+    <path d="M-6 0L-2 4L6 -4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g transform="translate(600, 380)">
+    <circle cx="0" cy="0" r="15" fill="#246BF5" />
+    <path d="M-6 0L-2 4L6 -4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

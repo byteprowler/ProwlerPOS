@@ -147,7 +147,7 @@ export default function HeroSection() {
             className="relative hidden md:block perspective-[1000px] preserve-3d"
           >
             <ProductImagePreview 
-              src="/images/Prowler-hero-preview.svg" 
+              src="/images/prowler-hero-preview.svg" 
               alt="ProwlerPOS Ecosystem Preview" 
               priority={true}
               className="z-20"

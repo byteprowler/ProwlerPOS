@@ -45,7 +45,7 @@ export default function ReportsPage() {
             Today&apos;s snapshot
           </motion.div>
           <ProductImagePreview 
-            src="/images/Prowler-reports-preview.svg" 
+            src="/images/prowler-reports-preview.svg" 
             alt="ProwlerPOS business reports" 
           />
         </div>

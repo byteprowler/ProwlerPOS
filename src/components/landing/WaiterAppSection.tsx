@@ -89,7 +89,7 @@ export default function WaiterAppSection() {
               Live Waiter App
             </motion.div>
             <ProductImagePreview 
-              src="/images/Prowler-waiter-app.svg" 
+              src="/images/prowler-waiter-app.svg" 
               alt="ProwlerPOS Waiter App" 
               className="max-w-[320px] mx-auto"
             />

@@ -73,7 +73,7 @@ export default function ReportsSection() {
           {/* Animated Dashboard Mockup */}
           <div className="relative">
             <ProductImagePreview 
-              src="/images/Prowler-reports-preview.svg" 
+              src="/images/prowler-reports-preview.svg" 
               alt="ProwlerPOS business reports" 
             />
             {/* 

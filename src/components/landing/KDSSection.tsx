@@ -234,7 +234,7 @@ export default function KDSSection() {
               Kitchen Display Interface
             </motion.div>
             <ProductImagePreview 
-              src="/images/Prowler-kds-preview.svg" 
+              src="/images/prowler-kds-preview.svg" 
               alt="ProwlerPOS Kitchen Display" 
             />
             {/* 

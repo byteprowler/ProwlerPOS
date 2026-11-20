@@ -52,7 +52,7 @@ export default function POSPage() {
               POS screen
             </motion.div>
             <ProductImagePreview 
-              src="/images/Prowler-pos-interface.svg" 
+              src="/images/prowler-pos-interface.svg" 
               alt="ProwlerPOS Interface" 
             />
           </motion.div>

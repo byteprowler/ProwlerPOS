@@ -17,6 +17,8 @@ jobs:
       - name: Setup pnpm (if selected)
         if: matrix.pm == 'pnpm'
         uses: pnpm/action-setup@v4
+        with:
+          version: 12.14.0
 
       - uses: actions/setup-node@v4
         with:

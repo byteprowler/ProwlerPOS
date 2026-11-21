@@ -6,10 +6,9 @@ import { staggerContainer, fadeUp, scaleIn } from '@/lib/animations'
 import SectionHeader from '@/components/shared/SectionHeader'
 import FeatureCard from '@/components/shared/FeatureCard'
 import { WAITER_FEATURES } from '@/lib/landing-data'
-import FloatingCard from '@/components/animations/FloatingCard'
 import MagneticButton from '@/components/animations/MagneticButton'
 import Link from 'next/link'
-import { CheckCircle2, ArrowRight, Smartphone, Users, LayoutGrid, SmartphoneIcon } from 'lucide-react'
+import { CheckCircle2, SmartphoneIcon } from 'lucide-react'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 
 /* 

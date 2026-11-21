@@ -20,8 +20,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handler)
   }, [])
 
-  useEffect(() => { setOpen(false) }, [pathname])
-
   return (
     <>
       <motion.header

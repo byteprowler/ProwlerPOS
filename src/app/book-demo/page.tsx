@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import Dropdown from '@/components/shared/Dropdown'
-import { Calendar as CalendarIcon, Clock, Users, ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Globe, Phone, Mail, User, Building2, MessageSquare, ArrowLeft } from 'lucide-react'
+import { Clock, ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Globe, Phone, Mail, User, Building2, MessageSquare, ArrowLeft } from 'lucide-react'
 import MagneticButton from '@/components/animations/MagneticButton'
 import Link from 'next/link'
 

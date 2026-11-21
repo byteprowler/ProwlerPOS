@@ -46,7 +46,7 @@ export default function BusinessTypesSection() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap justify-center gap-4 sm:gap-6"
         >
-          {BUSINESS_TYPES.map((biz, i) => (
+          {BUSINESS_TYPES.map((biz) => (
             <motion.div
               key={biz.label}
               variants={scaleIn}

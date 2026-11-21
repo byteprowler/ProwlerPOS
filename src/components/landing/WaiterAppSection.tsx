@@ -1,9 +1,9 @@
 'use client'
 
-import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { useRef, useState } from 'react'
-import { staggerContainer, fadeUp, slideInRight, scaleIn, buttonTap } from '@/lib/animations'
-import { Smartphone, LayoutGrid, PlusCircle, Send, CheckCircle2, Map, Users2, Clock, SmartphoneIcon } from 'lucide-react'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { staggerContainer, fadeUp, slideInRight } from '@/lib/animations'
+import { Smartphone, PlusCircle, Send, CheckCircle2, Clock, SmartphoneIcon } from 'lucide-react'
 import MagneticButton from '@/components/animations/MagneticButton'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 import Link from 'next/link'

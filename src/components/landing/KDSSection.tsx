@@ -1,9 +1,9 @@
 'use client'
 
-import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { useRef, useState, useEffect } from 'react'
-import { staggerContainer, fadeUp, slideInRight, scaleIn, buttonTap } from '@/lib/animations'
-import { ChefHat, Monitor, Ticket, Clock, CheckCircle2, AlertCircle, Play, ArrowRight, MonitorPlay } from 'lucide-react'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { staggerContainer, fadeUp, slideInRight } from '@/lib/animations'
+import { ChefHat, Ticket, Clock, CheckCircle2, AlertCircle, Play, MonitorPlay } from 'lucide-react'
 import MagneticButton from '@/components/animations/MagneticButton'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 import Link from 'next/link'
@@ -16,43 +16,43 @@ const FEATURES = [
   { text: 'Less paper on the line', icon: CheckCircle2 },
 ]
 
-const TICKETS_DATA = [
-  {
-    id: '#882',
-    table: 'T4',
-    time: '08:12',
-    status: 'new',
-    items: [
-      { name: '1x Classic Burger', mod: '— No Onions, Extra Cheese' },
-      { name: '2x Caesar Salad', mod: null },
-    ],
-  },
-  {
-    id: '#883',
-    table: 'T2',
-    time: '06:45',
-    status: 'preparing',
-    items: [
-      { name: '1x Ribeye Steak', mod: '— Medium Rare' },
-      { name: '2x Truffle Fries', mod: null },
-    ],
-  },
-  {
-    id: '#879',
-    table: 'T6',
-    time: '02:10',
-    status: 'ready',
-    items: [
-      { name: '3x Pasta Carbonara', mod: null },
-    ],
-  },
-]
+// const TICKETS_DATA = [
+//   {
+//     id: '#882',
+//     table: 'T4',
+//     time: '08:12',
+//     status: 'new',
+//     items: [
+//       { name: '1x Classic Burger', mod: '— No Onions, Extra Cheese' },
+//       { name: '2x Caesar Salad', mod: null },
+//     ],
+//   },
+//   {
+//     id: '#883',
+//     table: 'T2',
+//     time: '06:45',
+//     status: 'preparing',
+//     items: [
+//       { name: '1x Ribeye Steak', mod: '— Medium Rare' },
+//       { name: '2x Truffle Fries', mod: null },
+//     ],
+//   },
+//   {
+//     id: '#879',
+//     table: 'T6',
+//     time: '02:10',
+//     status: 'ready',
+//     items: [
+//       { name: '3x Pasta Carbonara', mod: null },
+//     ],
+//   },
+// ]
 
-const statusConfig: Record<string, { label: string; timerBg: string; timerText: string; border: string; dot: string; glow: string }> = {
-  new: { label: 'New', timerBg: 'bg-rose-500', timerText: 'text-white', border: 'border-rose-500/30', dot: 'bg-rose-500', glow: 'shadow-rose-500/20' },
-  preparing: { label: 'Preparing', timerBg: 'bg-amber-400', timerText: 'text-slate-900', border: 'border-amber-500/30', dot: 'bg-amber-400', glow: 'shadow-amber-500/20' },
-  ready: { label: 'Ready', timerBg: 'bg-[var(--primary)]', timerText: 'text-white', border: 'border-[var(--primary)]/30', dot: 'bg-[var(--primary)]', glow: 'shadow-[var(--primary)]/20' },
-}
+// const statusConfig: Record<string, { label: string; timerBg: string; timerText: string; border: string; dot: string; glow: string }> = {
+//   new: { label: 'New', timerBg: 'bg-rose-500', timerText: 'text-white', border: 'border-rose-500/30', dot: 'bg-rose-500', glow: 'shadow-rose-500/20' },
+//   preparing: { label: 'Preparing', timerBg: 'bg-amber-400', timerText: 'text-slate-900', border: 'border-amber-500/30', dot: 'bg-amber-400', glow: 'shadow-amber-500/20' },
+//   ready: { label: 'Ready', timerBg: 'bg-[var(--primary)]', timerText: 'text-white', border: 'border-[var(--primary)]/30', dot: 'bg-[var(--primary)]', glow: 'shadow-[var(--primary)]/20' },
+// }
 
 /* 
   KDSDisplayMockup REPLACED WITH GENERATED IMAGE ASSET

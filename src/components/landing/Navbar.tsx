@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { NAV_LINKS } from '@/lib/landing-data'
-import { buttonTap, fadeUp } from '@/lib/animations'
+import { buttonTap } from '@/lib/animations'
 import { Globe, Menu, X, ArrowRight } from 'lucide-react'
 import MagneticButton from '@/components/animations/MagneticButton'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -35,12 +36,12 @@ export default function Navbar() {
             : 'bg-white border border-transparent'
         }`}>
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div className="w-9 h-9 bg-[var(--foreground)] rounded-xl flex items-center justify-center transition-all duration-500 group-hover:bg-[var(--primary)] group-hover:rotate-6 shadow-lg shadow-black/5 group-hover:shadow-[var(--primary)]/20">
               <Globe size={20} className="text-white" />
             </div>
             <span className="font-black text-xl text-[var(--foreground)] tracking-tighter uppercase">ProwlerPOS</span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">

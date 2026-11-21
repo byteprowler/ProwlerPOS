@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { scaleIn, fadeUp } from '@/lib/animations'
+import { scaleIn } from '@/lib/animations'
 
 interface ProductImagePreviewProps {
   src: string

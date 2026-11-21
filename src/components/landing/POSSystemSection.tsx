@@ -1,9 +1,9 @@
 'use client'
 
-import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { useRef, useState } from 'react'
-import { staggerContainer, fadeUp, slideInRight, buttonTap, scaleIn } from '@/lib/animations'
-import { CheckCircle2, ShoppingCart, CreditCard, Receipt, BarChart3, Users, Zap, LayoutDashboard } from 'lucide-react'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { staggerContainer, fadeUp, slideInRight } from '@/lib/animations'
+import { CreditCard, Receipt, BarChart3, Users, Zap, LayoutDashboard } from 'lucide-react'
 import MagneticButton from '@/components/animations/MagneticButton'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 import Link from 'next/link'

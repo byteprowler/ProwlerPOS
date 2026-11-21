@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { fadeUp, staggerContainer, floatingCard } from '@/lib/animations'
+import { fadeUp, staggerContainer } from '@/lib/animations'
 import { CheckCircle2, Target } from 'lucide-react'
 import MagneticButton from '@/components/animations/MagneticButton'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'

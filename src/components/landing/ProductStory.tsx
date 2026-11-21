@@ -1,8 +1,8 @@
 'use client'
 
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useRef } from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
 import { 
   UserPlus, 
   ChefHat, 
@@ -12,7 +12,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Clock,
-  ArrowDown
+  type LucideIcon
 } from 'lucide-react'
 
 const StoryStep = ({ 
@@ -24,7 +24,7 @@ const StoryStep = ({
   isLast = false 
 }: { 
   index: number, 
-  icon: any, 
+  icon: LucideIcon, 
   title: string, 
   description: string, 
   active?: boolean,
@@ -177,12 +177,12 @@ const StoryStep = ({
 
 export default function ProductStory() {
   const containerRef = useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  })
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef,
+  //   offset: ["start end", "end start"]
+  // })
 
-  const smoothProgress = useSpring(scrollYProgress, { damping: 30, stiffness: 200 })
+  // const smoothProgress = useSpring(scrollYProgress, { damping: 30, stiffness: 200 })
 
   const steps = [
     {

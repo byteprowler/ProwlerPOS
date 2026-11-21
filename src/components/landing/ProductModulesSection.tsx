@@ -88,7 +88,7 @@ export default function ProductModulesSection() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          {MODULES.map((mod, i) => (
+          {MODULES.map((mod) => (
             <Link
               key={mod.id}
               href={mod.href}

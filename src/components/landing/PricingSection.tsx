@@ -39,7 +39,7 @@ export default function PricingSection() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          {PRICING_PLANS.map((plan, i) => (
+          {PRICING_PLANS.map((plan) => (
             <motion.div
               key={plan.name}
               variants={scaleIn}

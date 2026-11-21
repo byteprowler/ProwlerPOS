@@ -2,7 +2,7 @@
 
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { staggerContainer, fadeUp, scaleIn } from '@/lib/animations'
+import { staggerContainer, scaleIn } from '@/lib/animations'
 import SectionHeader from '@/components/shared/SectionHeader'
 import MagneticButton from '@/components/animations/MagneticButton'
 import Link from 'next/link'
@@ -25,7 +25,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen pt-40 pb-40 bg-[#F9FAFB] relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-300 h-200 bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         <SectionHeader
@@ -51,7 +51,7 @@ export default function PricingPage() {
           animate={inView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-40"
         >
-          {PRICING_PLANS.map((plan, i) => (
+          {PRICING_PLANS.map((plan) => (
             <motion.div
               key={plan.name}
               variants={scaleIn}

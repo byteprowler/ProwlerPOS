@@ -2,13 +2,13 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { staggerContainer, fadeUp, scaleIn } from '@/lib/animations'
+import { staggerContainer, fadeUp } from '@/lib/animations'
 import SectionHeader from '@/components/shared/SectionHeader'
 import FeatureCard from '@/components/shared/FeatureCard'
 import { REPORTS_FEATURES } from '@/lib/landing-data'
 import MagneticButton from '@/components/animations/MagneticButton'
 import Link from 'next/link'
-import { TrendingUp, ArrowUpRight, ArrowDownRight, BarChart3, PieChart, Activity, ArrowRight, LayoutDashboard } from 'lucide-react'
+import { LayoutDashboard } from 'lucide-react'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 
 /* 
@@ -24,7 +24,7 @@ export default function ReportsPage() {
 
   return (
     <div className="min-h-screen pt-40 pb-40 bg-[#F9FAFB] relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-300 h-200 bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         <SectionHeader

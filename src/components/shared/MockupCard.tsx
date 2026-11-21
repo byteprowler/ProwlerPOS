@@ -1,7 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { floatingCard } from '@/lib/animations'
+import { motion } from 'framer-motion';
 
 interface MockupCardProps {
   children: React.ReactNode

@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 import { motion, useSpring, useMotionValue } from 'framer-motion'
 
 export default function CustomCursor() {
-  const [mounted, setMounted] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
   
   const cursorX = useMotionValue(-100)
@@ -18,8 +17,6 @@ export default function CustomCursor() {
   const springY = useSpring(ringY, springConfig)
 
   useEffect(() => {
-    setMounted(true)
-    
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX)
       cursorY.set(e.clientY)
@@ -41,8 +38,6 @@ export default function CustomCursor() {
       window.removeEventListener('mouseover', handleHover)
     }
   }, [cursorX, cursorY, ringX, ringY])
-
-  if (!mounted) return null
 
   return (
     <div className="fixed inset-0 pointer-events-none z-[9999] hidden md:block">

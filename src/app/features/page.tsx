@@ -35,7 +35,7 @@ export default function FeaturesPage() {
           animate={inView ? 'visible' : 'hidden'}
           className="space-y-32 mt-20"
         >
-          {FEATURE_CATEGORIES.map((category, idx) => (
+          {FEATURE_CATEGORIES.map((category) => (
             <div key={category.category} className="scroll-mt-32">
               <motion.div
                 variants={fadeUp}

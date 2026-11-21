@@ -1,20 +1,20 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
+// import { useRef } from 'react'
 import { fadeUp, staggerContainer, scaleIn } from '@/lib/animations'
 import { WORKFLOW_STEPS } from '@/lib/landing-data'
-import { Smartphone, ChefHat, ArrowRight, Monitor } from 'lucide-react'
+import { Smartphone, ChefHat, ArrowRight, Monitor, type LucideIcon } from 'lucide-react'
 
-const ICON_MAP: Record<string, any> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   waiter: Smartphone,
   pos: Monitor,
   kds: ChefHat,
 }
 
 export default function WorkflowSection() {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-100px' })
+  // const ref = useRef(null)
+  // const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
     <section className="py-32 bg-[var(--foreground)] text-white relative overflow-hidden">

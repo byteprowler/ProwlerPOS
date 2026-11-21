@@ -6,10 +6,9 @@ import { staggerContainer, fadeUp, scaleIn } from '@/lib/animations'
 import SectionHeader from '@/components/shared/SectionHeader'
 import FeatureCard from '@/components/shared/FeatureCard'
 import { POS_FEATURES } from '@/lib/landing-data'
-import FloatingCard from '@/components/animations/FloatingCard'
 import MagneticButton from '@/components/animations/MagneticButton'
 import Link from 'next/link'
-import { Receipt, Smartphone, CheckCircle2, ArrowRight, Monitor, AppWindow } from 'lucide-react'
+import { CheckCircle2, AppWindow } from 'lucide-react'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 
 /* 
@@ -25,7 +24,7 @@ export default function POSPage() {
 
   return (
     <div className="min-h-screen pt-40 pb-40 bg-[#F9FAFB] relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-300 h-200 bg-[var(--primary)]/5 rounded-full blur-[150px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         <SectionHeader
@@ -70,7 +69,7 @@ export default function POSPage() {
               Keep the line moving with fewer taps.
             </motion.h3>
             <div className="space-y-6">
-              {POS_FEATURES.slice(0, 4).map((feature, i) => (
+              {POS_FEATURES.slice(0, 4).map((feature) => (
                 <motion.div key={feature.title} variants={fadeUp} className="flex items-start gap-5 group">
                   <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-500 flex-shrink-0">
                     <CheckCircle2 size={24} strokeWidth={2.5} />

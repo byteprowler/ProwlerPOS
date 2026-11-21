@@ -4,7 +4,6 @@ import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
 import Link from 'next/link'
 import { fadeUp, staggerContainer } from '@/lib/animations'
 import MagneticButton from '@/components/animations/MagneticButton'
-import { useEffect, useState } from 'react';
 import { Home, MessageCircle } from 'lucide-react';
 
 function InteractiveTicket() {
@@ -36,13 +35,13 @@ function InteractiveTicket() {
 
   return (
     <div
-      className="relative w-full max-w-sm mx-auto h-[400px] perspective-[1000px] flex items-center justify-center cursor-pointer hover-target hidden sm:flex"
+      className="relative w-full max-w-sm mx-auto h-100 perspective-[1000px] items-center justify-center cursor-pointer hover-target hidden sm:flex"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       <motion.div
         style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
-        className="w-[280px] bg-white rounded-xl shadow-2xl p-6 relative border border-slate-200"
+        className="w-70 bg-white rounded-xl shadow-2xl p-6 relative border border-slate-200"
       >
         {/* Jagged receipt edge top */}
         <div className="absolute -top-1 left-0 right-0 h-2 bg-white" style={{ clipPath: 'polygon(0 100%, 5% 0, 10% 100%, 15% 0, 20% 100%, 25% 0, 30% 100%, 35% 0, 40% 100%, 45% 0, 50% 100%, 55% 0, 60% 100%, 65% 0, 70% 100%, 75% 0, 80% 100%, 85% 0, 90% 100%, 95% 0, 100% 100%)' }} />
@@ -82,7 +81,7 @@ function InteractiveTicket() {
           <svg width="180" height="40" viewBox="0 0 180 40" fill="none">
             {/* Fake barcode lines */}
             {Array.from({ length: 30 }).map((_, i) => (
-              <rect key={i} x={i * 6} y="0" width={Math.random() > 0.5 ? 2 : 4} height="40" fill="var(--foreground)" />
+              <rect key={i} x={i * 6} y="0" width={i % 3 === 0 ? 4 : 2} height="40" fill="var(--foreground)" />
             ))}
           </svg>
         </div>
@@ -96,9 +95,6 @@ function InteractiveTicket() {
 }
 
 export default function NotFound() {
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
-
   return (
     <div className="min-h-screen bg-[var(--background)] flex items-center justify-center relative overflow-hidden px-4">
       {/* Dynamic Background */}
@@ -133,7 +129,7 @@ export default function NotFound() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="text-lg text-slate-500 mb-10 font-medium max-w-xl mx-auto md:mx-0 leading-relaxed">
-            We couldn't find the page you were looking for. Let's get you back to the system.
+            We couldn&apos;t find the page you were looking for. Let&apos;s get you back to the system.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
@@ -165,7 +161,7 @@ export default function NotFound() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex-1 flex justify-center items-center w-full max-w-md"
         >
-          {mounted && <InteractiveTicket />}
+          <InteractiveTicket />
         </motion.div>
       </div>
     </div>

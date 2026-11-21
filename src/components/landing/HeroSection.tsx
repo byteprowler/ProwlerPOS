@@ -5,25 +5,24 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 import { fadeUp, staggerContainer, blurReveal, scaleIn } from '@/lib/animations'
 import MagneticButton from '@/components/animations/MagneticButton'
-import FloatingCard from '@/components/animations/FloatingCard'
-import { Utensils, Coffee, ShoppingBag, Store, Package, CheckCircle2, Zap, Clock, TrendingUp } from 'lucide-react'
+import {  Zap } from 'lucide-react'
 import ProductImagePreview from '@/components/shared/ProductImagePreview'
 
-function StatusBadge({ icon: Icon, text, className = '', delay = 0 }: { icon: any, text: string, className?: string, delay?: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8, y: 10 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ delay, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`absolute z-30 flex items-center gap-2 px-3 py-1.5 bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-slate-100 text-[10px] font-bold text-[var(--foreground)] uppercase tracking-wider ${className}`}
-    >
-      <div className="w-4 h-4 rounded-full bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
-        <Icon size={10} strokeWidth={3} />
-      </div>
-      <span>{text}</span>
-    </motion.div>
-  )
-}
+// function StatusBadge({ icon: Icon, text, className = '', delay = 0 }: { icon: any, text: string, className?: string, delay?: number }) {
+//   return (
+//     <motion.div
+//       initial={{ opacity: 0, scale: 0.8, y: 10 }}
+//       animate={{ opacity: 1, scale: 1, y: 0 }}
+//       transition={{ delay, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+//       className={`absolute z-30 flex items-center gap-2 px-3 py-1.5 bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-slate-100 text-[10px] font-bold text-[var(--foreground)] uppercase tracking-wider ${className}`}
+//     >
+//       <div className="w-4 h-4 rounded-full bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+//         <Icon size={10} strokeWidth={3} />
+//       </div>
+//       <span>{text}</span>
+//     </motion.div>
+//   )
+// }
 
 export default function HeroSection() {
   const mouseX = useMotionValue(0)

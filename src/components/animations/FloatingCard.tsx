@@ -12,7 +12,7 @@ interface FloatingCardProps {
 export default function FloatingCard({ children, delay = 0, className = '' }: FloatingCardProps) {
   return (
     <motion.div
-      {...(floatingCard(delay) as any)}
+      {...(floatingCard(delay) as React.ComponentProps<typeof motion.div>)}
       className={className}
     >
       {children}
